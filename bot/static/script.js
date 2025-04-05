@@ -105,16 +105,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         // Подтверждение заказа
-        if (confirmOrderBtn) {
-            confirmOrderBtn.addEventListener("click", function () {
-                fetch(`${BASE_URL}/confirm_order`, { method: "POST" })
-                .then(response => {
-                    if (response.ok) {
-                        window.location.href = "/";  // Переход на главную
-                    }
-                });
-            });
-        }
+        // if (confirmOrderBtn) {
+        //     confirmOrderBtn.addEventListener("click", function () {
+        //         fetch(`${BASE_URL}/confirm_order`, { method: "POST" })
+        //         .then(response => {
+        //             if (response.ok) {
+        //                 window.location.href = "/";  // Переход на главную
+        //             }
+        //         });
+        //     });
+        // }
 
         console.log("✅ Скрипт успешно загружен и готов к работе!");
     }, 500);  // Дадим 500мс на загрузку страницы
